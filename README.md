@@ -6,3 +6,5 @@ Simple Calculator Performing
 -- Multiplication
 -- Division
 -- Modulo
+
+live demo : https://shincyshnz.github.io/calculator/
