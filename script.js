@@ -27,7 +27,7 @@ function result() {
 
 //change the active class of button to deactivate
 function deactivateOperator(op = null) {
-    Array.from(operators).forEach(operator => {
+    operators.forEach(operator => {
         console.log(operator.textContent);
         if (op == null) {
             operator.classList.remove('active');
@@ -67,7 +67,7 @@ let operandArray = [];
 let operator;
 
 //If clicked button is operand
-Array.from(operands).forEach(operand => {
+operands.forEach(operand => {
     operand.addEventListener('click', (e) => {
         let val = e.target.getAttribute('data-value');
         if (val === 'decimal') {
@@ -83,7 +83,7 @@ Array.from(operands).forEach(operand => {
 });
 
 //If clicked button is operator
-Array.from(operators).forEach(op => {
+operators.forEach(op => {
     op.addEventListener('click', () => {
         if (displayValue != 0 && displayValue !== 'ERROR') {
             if (operandArray.length > 0) {
